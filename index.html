@@ -11,213 +11,68 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<header class="site-header">
-  <div class="nav-shell">
-    <a class="brand" href="index.html" aria-label="Startseite"><span class="brand-box">N</span><span>NOVA</span></a>
-    <button class="menu-button" aria-label="Menü öffnen" aria-expanded="false"><i></i><i></i></button>
-    <nav class="nav-links" aria-label="Hauptnavigation">
-      <a href="#unternehmen">Unternehmen</a>
-      <a href="#leistungen">Leistungen</a>
-      <a href="#projekte">Projekte</a>
-      <a href="#kontakt">Kontakt</a>
-      <a class="nav-cta" href="#kontakt">Projekt anfragen</a>
-    </nav>
+<body class="landing-page">
+  <main class="landing-shell" aria-hidden="true">
+    <div class="landing-backdrop"></div>
+    <div class="landing-brand">
+      <a class="brand" href="index.html"><span class="brand-box">N</span><span>NOVA</span></a>
+      <span class="landing-label">Gebäudereinigung & Sanierung</span>
+    </div>
+    <div class="landing-copy">
+      <span class="kicker light">Kompetenz für Immobilien</span>
+      <h1>Pflegen. Erhalten. Verändern.</h1>
+      <p>Zwei spezialisierte Leistungsbereiche unter einem gemeinsamen Qualitätsanspruch.</p>
+    </div>
+  </main>
+
+  <div class="area-modal" role="dialog" aria-modal="true" aria-labelledby="area-title" aria-describedby="area-desc">
+    <div class="area-modal-panel">
+      <div class="area-modal-head">
+        <div>
+          <span class="kicker">Willkommen</span>
+          <h1 id="area-title">Welchen Bereich möchten Sie öffnen?</h1>
+        </div>
+        <p id="area-desc">Wählen Sie den passenden Geschäftsbereich. Beide Bereiche haben eine eigene Navigation, Bildwelt und Leistungsstruktur.</p>
+      </div>
+
+      <div class="area-choice-grid">
+        <a class="area-choice area-choice-cleaning" href="reinigung.html" data-area-choice="reinigung">
+          <div class="area-choice-media">
+            <img src="assets/cleaning-hero.svg" alt="">
+          </div>
+          <div class="area-choice-body">
+            <span class="area-choice-index">01</span>
+            <div>
+              <span class="kicker">Facility Services</span>
+              <h2>Gebäudereinigung</h2>
+              <p>Unterhaltsreinigung, Glasreinigung, Objektbetreuung und Reinigung nach Bau- oder Sanierungsarbeiten.</p>
+              <span class="area-choice-link">Bereich öffnen</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="area-choice area-choice-renovation" href="sanierung.html" data-area-choice="sanierung">
+          <div class="area-choice-media">
+            <img src="assets/renovation-hero.svg" alt="">
+          </div>
+          <div class="area-choice-body">
+            <span class="area-choice-index">02</span>
+            <div>
+              <span class="kicker">Construction Services</span>
+              <h2>Sanierung</h2>
+              <p>Innenausbau, Trockenbau, Boden- und Oberflächenarbeiten sowie koordinierte Modernisierung.</p>
+              <span class="area-choice-link">Bereich öffnen</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="area-modal-foot">
+        <span>NOVA ist aktuell eine Platzhaltermarke für die Vorschau.</span>
+        <span>Firmenname, Logo und Kontaktdaten werden später ersetzt.</span>
+      </div>
+    </div>
   </div>
-</header>
-
-<main>
-  <section class="home-hero">
-    <div class="home-intro reveal">
-      <div>
-        <span class="kicker light">Gebäudereinigung und Sanierung</span>
-        <h1>Zwei Bereiche. Ein Qualitätsanspruch.</h1>
-      </div>
-      <p>Professionelle Lösungen für saubere, gepflegte und modernisierte Immobilien. Wählen Sie den Bereich, der zu Ihrem Projekt passt.</p>
-    </div>
-
-    <div class="split-grid">
-      <a class="split-card reveal" href="reinigung.html">
-        <img src="https://images.unsplash.com/photo-1437326300822-01d8f13c024f?auto=format&fit=crop&q=82&w=1800" alt="Professionelle Reinigung in einem modernen Gebäude">
-        <div class="split-card-content">
-          <div>
-            <span class="pill">Gebäudereinigung</span>
-            <h2>Saubere Räume. Verlässliche Abläufe.</h2>
-            <p>Unterhaltsreinigung, Glasreinigung, Bauendreinigung und individuelle Reinigungskonzepte für Unternehmen und Immobilien.</p>
-          </div>
-          <span class="split-number">01</span>
-        </div>
-      </a>
-
-      <a class="split-card reveal" href="sanierung.html">
-        <img src="https://images.unsplash.com/photo-1711296168555-ea2526321306?auto=format&fit=crop&q=82&w=1800" alt="Innenraum während einer Sanierung">
-        <div class="split-card-content">
-          <div>
-            <span class="pill">Sanierung</span>
-            <h2>Bestehendes weiterdenken.</h2>
-            <p>Innenausbau, Trockenbau, Boden, Oberflächen und koordinierte Modernisierung für Wohn- und Gewerbeobjekte.</p>
-          </div>
-          <span class="split-number">02</span>
-        </div>
-      </a>
-    </div>
-
-    <div class="home-trust reveal">
-      <div class="trust-item"><strong>Klare Kommunikation</strong><span>Ein Ansprechpartner für das Projekt</span></div>
-      <div class="trust-item"><strong>Flexible Planung</strong><span>Leistung passend zu Objekt und Ablauf</span></div>
-      <div class="trust-item"><strong>Saubere Umsetzung</strong><span>Strukturiert, nachvollziehbar und termintreu</span></div>
-      <div class="trust-item"><strong>Für Privat und Gewerbe</strong><span>Kleine Maßnahmen bis größere Projekte</span></div>
-    </div>
-  </section>
-
-  <section class="section" id="unternehmen">
-    <div class="container two-col">
-      <div class="about-copy reveal">
-        <span class="kicker">Unternehmen</span>
-        <h2 class="h2">Ein Partner für Pflege, Werterhalt und Veränderung.</h2>
-        <p class="body-lg">Die Website ist als hochwertiger erster Entwurf angelegt. Inhaltlich verbindet sie zwei Geschäftsbereiche, die im Alltag häufig direkt zusammengehören: Gebäudereinigung und Sanierung.</p>
-        <p class="body-md">Statt viele einzelne Leistungen nebeneinanderzustellen, führen wir Besucher schnell zum passenden Bereich und erklären anschließend klar, was angeboten wird, wie die Zusammenarbeit abläuft und wie eine Anfrage gestellt werden kann.</p>
-        <div class="about-list">
-          <div><strong>Persönliche Beratung</strong><span class="small">Projektumfang und Prioritäten werden vorab sauber geklärt.</span></div>
-          <div><strong>Transparente Abläufe</strong><span class="small">Klarer Start, definierte Leistungen und nachvollziehbare Schritte.</span></div>
-          <div><strong>Individuelle Lösungen</strong><span class="small">Keine starren Pakete, sondern Leistungen passend zum Objekt.</span></div>
-          <div><strong>Einheitlicher Auftritt</strong><span class="small">Beide Geschäftsbereiche bleiben als eine Marke erkennbar.</span></div>
-        </div>
-      </div>
-
-      <div class="image-stack reveal">
-        <img class="main-photo" src="https://images.unsplash.com/photo-1771189255372-b0f548998210?auto=format&fit=crop&q=82&w=1600" alt="Moderner Innenraum mit klarer Architektur">
-        <img class="small-photo" src="https://images.unsplash.com/photo-1561236478-a10a7659d498?auto=format&fit=crop&q=82&w=900" alt="Reinigung an einer Glasfassade">
-        <div class="image-caption">Beispielhafte Bildsprache. Später durch echte Team- und Projektfotos ersetzen.</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section white" id="leistungen">
-    <div class="container">
-      <div class="section-heading reveal">
-        <div>
-          <span class="kicker">Leistungsübersicht</span>
-          <h2 class="h2">Die wichtigsten Leistungen auf einen Blick.</h2>
-        </div>
-        <p class="body-lg">Für die Vorschau sind bewusst mehr Inhalte hinterlegt, damit der Kunde bereits ein vollständiges Gefühl für Aufbau und Umfang der späteren Website bekommt.</p>
-      </div>
-
-      <div class="service-overview-grid">
-        <article class="service-overview reveal">
-          <span class="num">01</span>
-          <h3 class="h3">Unterhaltsreinigung</h3>
-          <p class="body-md">Regelmäßige Reinigung für Büros, Praxen, Treppenhäuser und gewerblich genutzte Flächen.</p>
-        </article>
-        <article class="service-overview reveal">
-          <span class="num">02</span>
-          <h3 class="h3">Glas- und Fensterreinigung</h3>
-          <p class="body-md">Pflege von Fenstern, Glasflächen, Eingangsbereichen und transparenten Fassadenelementen.</p>
-        </article>
-        <article class="service-overview reveal">
-          <span class="num">03</span>
-          <h3 class="h3">Innenausbau</h3>
-          <p class="body-md">Anpassung und Modernisierung von Innenräumen inklusive Trockenbau und Oberflächen.</p>
-        </article>
-        <article class="service-overview dark-card reveal">
-          <span class="num">04</span>
-          <h3 class="h3">Komplette Sanierung</h3>
-          <p class="body-md">Koordinierte Maßnahmen für Wohnungen, Häuser, Gewerbeflächen und Bestandsobjekte.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section dark" id="projekte">
-    <div class="container">
-      <div class="section-heading reveal">
-        <div>
-          <span class="kicker light">Beispielprojekte</span>
-          <h2 class="h2">So kann der Referenzbereich später aussehen.</h2>
-        </div>
-        <p class="body-lg" style="color:rgba(255,255,255,.62)">Die Karten sind aktuell Musterinhalte. Sobald echte Referenzen vorliegen, können hier Vorher-Nachher-Fotos, Leistungsumfang, Ort und Projektdauer gezeigt werden.</p>
-      </div>
-
-      <div class="project-grid">
-        <article class="project-card reveal">
-          <img src="https://images.unsplash.com/photo-1711296168555-ea2526321306?auto=format&fit=crop&q=82&w=1600" alt="Sanierung eines Innenraums">
-          <div class="project-card-content">
-            <span class="pill">Beispielprojekt</span>
-            <h3>Komplettsanierung einer Gewerbefläche</h3>
-            <p>Trockenbau, Oberflächen, Bodenarbeiten und abschließende Bauendreinigung.</p>
-          </div>
-        </article>
-        <article class="project-card reveal">
-          <img src="https://images.unsplash.com/photo-1437326300822-01d8f13c024f?auto=format&fit=crop&q=82&w=1200" alt="Professionelle Reinigung in einem Gebäude">
-          <div class="project-card-content">
-            <span class="pill">Beispielprojekt</span>
-            <h3>Regelmäßige Objektbetreuung</h3>
-            <p>Unterhaltsreinigung für Büro- und Gemeinschaftsflächen.</p>
-          </div>
-        </article>
-        <article class="project-card reveal">
-          <img src="https://images.unsplash.com/photo-1762497403309-2a2c2d78a380?auto=format&fit=crop&q=82&w=1200" alt="Moderne Gebäudefassade">
-          <div class="project-card-content">
-            <span class="pill">Beispielprojekt</span>
-            <h3>Modernisierung eines Bestandsobjekts</h3>
-            <p>Innenausbau, Detailarbeiten und saubere Übergabe.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section soft">
-    <div class="container">
-      <div class="section-heading reveal">
-        <div>
-          <span class="kicker">Zusammenarbeit</span>
-          <h2 class="h2">Vom ersten Gespräch bis zur Übergabe.</h2>
-        </div>
-        <p class="body-lg">Ein verständlicher Ablauf schafft Vertrauen. Deshalb wird der Prozess auf der Website bewusst einfach und konkret erklärt.</p>
-      </div>
-      <div class="process-grid">
-        <article class="process-step reveal"><span class="step">01</span><h3 class="h3">Anfrage</h3><p class="body-md">Der Kunde beschreibt Objekt, Bedarf, Ort und gewünschten Zeitraum.</p></article>
-        <article class="process-step reveal"><span class="step">02</span><h3 class="h3">Besichtigung</h3><p class="body-md">Bei Bedarf wird die Fläche vor Ort angesehen und der Umfang genauer abgestimmt.</p></article>
-        <article class="process-step reveal"><span class="step">03</span><h3 class="h3">Angebot</h3><p class="body-md">Leistung, Ablauf und Rahmenbedingungen werden transparent zusammengefasst.</p></article>
-        <article class="process-step reveal"><span class="step">04</span><h3 class="h3">Umsetzung</h3><p class="body-md">Nach Freigabe startet die Arbeit mit klarer Zuständigkeit und sauberer Übergabe.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="kontakt">
-    <div class="container">
-      <div class="big-banner reveal">
-        <div>
-          <span class="kicker">Projekt starten</span>
-          <h2 class="h2">Sie haben ein Objekt oder Projekt, das wir uns ansehen sollen?</h2>
-        </div>
-        <div>
-          <p>Für die Vorschau führen die Anfragen direkt zu den passenden Formularen der beiden Geschäftsbereiche.</p>
-          <div class="btn-row">
-            <a class="btn dark" href="reinigung.html#kontakt">Reinigung anfragen</a>
-            <a class="btn outline-dark" href="sanierung.html#kontakt">Sanierung anfragen</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a class="brand" href="index.html"><span class="brand-box">N</span><span>NOVA</span></a>
-        <p>Temporäre Markenbezeichnung für die Vorschau. Firmenname, Logo, Kontaktdaten und echte Referenzen werden nach Kundenfreigabe ersetzt.</p>
-      </div>
-      <div class="footer-col"><h4>Bereiche</h4><a href="reinigung.html">Gebäudereinigung</a><a href="sanierung.html">Sanierung</a></div>
-      <div class="footer-col"><h4>Unternehmen</h4><a href="#unternehmen">Über uns</a><a href="#projekte">Projekte</a><a href="#kontakt">Kontakt</a></div>
-      <div class="footer-col"><h4>Rechtliches</h4><span>Impressum folgt</span><span>Datenschutz folgt</span></div>
-    </div>
-    <div class="footer-bottom"><span>© <span data-year></span> NOVA</span><span>Website Vorschau</span></div>
-  </div>
-</footer>
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
