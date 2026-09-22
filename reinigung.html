@@ -1,86 +1,231 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0f231b">
-  <meta name="description" content="Professionelle Gebäudereinigung für Büro, Gewerbe, Glasflächen und Immobilien.">
-  <title>NOVA Gebäudereinigung</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111714">
+  <meta name="description" content="Professionelle Gebäudereinigung für Büro, Gewerbe, Praxis und Immobilien.">
+  <title>NOVA | Gebäudereinigung</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="site-nav" aria-label="Hauptnavigation">
-    <a class="brand brand--light" href="index.html"><span class="brand-mark">N</span><span>NOVA</span></a>
-    <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span></button>
-    <div class="nav-links">
-      <a href="#leistungen">Leistungen</a><a href="#ablauf">Ablauf</a><a href="#kontakt">Kontakt</a>
-      <a class="nav-switch" href="sanierung.html">Sanierung ↗</a><a class="nav-button" href="#kontakt">Angebot anfragen</a>
-    </div>
-  </nav>
+<header class="site-header">
+  <div class="nav-shell">
+    <a class="brand" href="index.html"><span class="brand-box">N</span><span>NOVA</span></a>
+    <button class="menu-button" aria-label="Menü öffnen" aria-expanded="false"><i></i><i></i></button>
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#kunden">Für wen</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#referenzen">Projekte</a>
+      <a href="sanierung.html">Sanierung</a>
+      <a class="nav-cta" href="#kontakt">Angebot anfragen</a>
+    </nav>
+  </div>
+</header>
 
-  <header class="sub-hero">
-    <div class="hero-backdrop"><span class="hero-mesh"></span><span class="hero-shape"></span></div>
-    <div class="container hero-content reveal">
-      <span class="eyebrow">Gebäudereinigung · Professionell & zuverlässig</span>
-      <h1>Sauber.<br>Bis ins Detail.</h1>
-      <p>Individuelle Reinigungskonzepte für Unternehmen, Immobilien und anspruchsvolle Flächen – flexibel geplant, sorgfältig ausgeführt.</p>
-      <div class="hero-actions"><a class="button button--lime" href="#kontakt">Kostenlos anfragen <span>→</span></a><a class="button button--light" href="#leistungen">Leistungen ansehen</a></div>
+<main>
+  <section class="inner-hero">
+    <img src="https://images.unsplash.com/photo-1437326300822-01d8f13c024f?auto=format&fit=crop&q=84&w=2200" alt="Professionelle Reinigung in einem modernen Gebäude">
+    <div class="container hero-copy reveal">
+      <span class="kicker light">Gebäudereinigung für Gewerbe und Immobilien</span>
+      <h1 class="display">Sauberkeit, die im Alltag funktioniert.</h1>
+      <p>Von der regelmäßigen Unterhaltsreinigung bis zur gründlichen Bauendreinigung: Wir entwickeln einen Ablauf, der zu Fläche, Nutzung und Betriebszeiten passt.</p>
+      <div class="btn-row">
+        <a class="btn lime" href="#kontakt">Kostenlos anfragen</a>
+        <a class="btn outline" href="#leistungen">Leistungen ansehen</a>
+      </div>
+      <div class="hero-meta">
+        <span class="pill">Büro</span>
+        <span class="pill">Praxis</span>
+        <span class="pill">Gewerbe</span>
+        <span class="pill">Wohnobjekte</span>
+      </div>
     </div>
-    <span class="hero-note">Scrollen zum Entdecken</span>
-  </header>
+  </section>
 
-  <section class="intro-strip">
-    <div class="container intro-grid reveal">
-      <h2>Sauberkeit ist kein Detail.<br>Sie ist der erste Eindruck.</h2>
-      <p>Ob regelmäßige Unterhaltsreinigung oder gezielter Sondereinsatz: Wir entwickeln eine Lösung, die zu Objekt, Nutzung und Ablauf passt. Transparent organisiert und mit einem festen Qualitätsanspruch.</p>
+  <section class="stats-strip">
+    <div class="container stats-grid">
+      <div class="stat-intro"><strong>Beispielhafte Leistungsdarstellung für die Vorschau</strong></div>
+      <div class="stat"><strong>Flexibel</strong><span>Rhythmus passend zum Objekt und Bedarf</span></div>
+      <div class="stat"><strong>Planbar</strong><span>Klare Zeitfenster und feste Abstimmung</span></div>
+      <div class="stat"><strong>Persönlich</strong><span>Direkter Ansprechpartner für Rückfragen</span></div>
     </div>
   </section>
 
   <section class="section" id="leistungen">
     <div class="container">
-      <div class="section-head reveal"><div><span class="eyebrow eyebrow--dark">Unsere Leistungen</span><h2>Für jede Fläche die passende Pflege.</h2></div><p>Die Leistungen sind als solide Ausgangsbasis angelegt und können später exakt an das tatsächliche Portfolio des Kunden angepasst werden.</p></div>
-      <div class="service-grid">
-        <article class="service-card reveal"><div class="service-icon">⌂</div><h3>Unterhaltsreinigung</h3><p>Regelmäßige, planbare Reinigung für Büros, Praxen, Gewerbe und Gemeinschaftsflächen.</p></article>
-        <article class="service-card reveal" style="--accent:rgba(80,190,255,.16)"><div class="service-icon">◇</div><h3>Glas- & Fensterreinigung</h3><p>Klare Sicht und gepflegte Glasflächen – innen und außen, auch in regelmäßigen Intervallen.</p></article>
-        <article class="service-card reveal" style="--accent:rgba(255,195,70,.18)"><div class="service-icon">↗</div><h3>Treppenhausreinigung</h3><p>Zuverlässige Pflege von Eingangsbereichen, Treppen, Geländern und gemeinschaftlichen Flächen.</p></article>
-        <article class="service-card reveal" style="--accent:rgba(184,255,61,.18)"><div class="service-icon">✦</div><h3>Grundreinigung</h3><p>Intensive Reinigung für stark beanspruchte oder länger nicht gepflegte Oberflächen und Bereiche.</p></article>
-        <article class="service-card reveal" style="--accent:rgba(255,119,74,.15)"><div class="service-icon">▦</div><h3>Bauendreinigung</h3><p>Saubere Übergabe nach Neubau, Umbau oder Sanierung – abgestimmt auf Baufortschritt und Terminplan.</p></article>
-        <article class="service-card reveal" style="--accent:rgba(120,120,255,.14)"><div class="service-icon">＋</div><h3>Sonderreinigung</h3><p>Individuelle Einsätze für besondere Flächen, Anforderungen oder kurzfristigen Reinigungsbedarf.</p></article>
+      <div class="section-heading reveal">
+        <div>
+          <span class="kicker">Leistungen</span>
+          <h2 class="h2">Reinigung, die zum Objekt passt.</h2>
+        </div>
+        <p class="body-lg">Die folgenden Inhalte sind bereits als vollständige Musterstruktur ausgearbeitet. Sobald das echte Leistungsspektrum des Kunden vorliegt, können einzelne Punkte ergänzt, entfernt oder umbenannt werden.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal"><span class="service-num">01</span><h3 class="h3">Unterhaltsreinigung</h3><p class="body-md">Regelmäßige Reinigung von Arbeitsplätzen, Verkehrsflächen, Sanitärbereichen, Küchen und Gemeinschaftsräumen.</p></article>
+        <article class="service-card reveal"><span class="service-num">02</span><h3 class="h3">Büro- und Praxisreinigung</h3><p class="body-md">Auf sensible Arbeitsumgebungen abgestimmte Reinigung mit klar definierten Bereichen und Zeitfenstern.</p></article>
+        <article class="service-card reveal"><span class="service-num">03</span><h3 class="h3">Glas- und Fensterreinigung</h3><p class="body-md">Reinigung von Fenstern, Rahmen, Glaswänden, Eingangsbereichen und gut zugänglichen Fassadenelementen.</p></article>
+        <article class="service-card reveal"><span class="service-num">04</span><h3 class="h3">Treppenhausreinigung</h3><p class="body-md">Pflege von Eingängen, Treppen, Handläufen, Aufzugsumfeldern und gemeinschaftlich genutzten Flächen.</p></article>
+        <article class="service-card reveal"><span class="service-num">05</span><h3 class="h3">Grundreinigung</h3><p class="body-md">Intensive Reinigung stark beanspruchter oder länger nicht gepflegter Flächen, Böden und Oberflächen.</p></article>
+        <article class="service-card reveal"><span class="service-num">06</span><h3 class="h3">Bauendreinigung</h3><p class="body-md">Entfernung typischer Bauverschmutzungen vor Abnahme, Übergabe oder Bezug eines renovierten Objekts.</p></article>
+        <article class="service-card reveal"><span class="service-num">07</span><h3 class="h3">Sonderreinigung</h3><p class="body-md">Individuelle Einsätze für besondere Anforderungen, kurzfristige Situationen oder spezielle Flächen.</p></article>
+        <article class="service-card reveal"><span class="service-num">08</span><h3 class="h3">Objektbetreuung</h3><p class="body-md">Kombinierbare Leistungen für regelmäßig betreute Immobilien, abgestimmt auf Nutzung und Frequenz.</p></article>
+        <article class="service-card reveal"><span class="service-num">09</span><h3 class="h3">Individuelle Reinigungskonzepte</h3><p class="body-md">Für größere oder komplexere Objekte kann ein eigener Plan mit Bereichen, Intervallen und Zuständigkeiten erstellt werden.</p></article>
       </div>
     </div>
   </section>
 
-  <section class="section feature-band">
-    <div class="container feature-grid">
-      <div class="feature-visual reveal"><span class="visual-ring"></span><span class="visual-label">Reinigung nach Plan · transparent organisiert</span></div>
-      <div class="feature-copy reveal"><span class="eyebrow">Qualität im Alltag</span><h2>Ein Ablauf, auf den man sich verlassen kann.</h2><p>Gute Gebäudereinigung funktioniert dann am besten, wenn sie kaum auffällt – weil alles sauber, pünktlich und unkompliziert läuft.</p>
-        <ul class="check-list"><li><span class="check">✓</span><b>Individuelle Reinigungspläne statt Standardpakete</b></li><li><span class="check">✓</span><b>Klare Abstimmung und verlässliche Zeitfenster</b></li><li><span class="check">✓</span><b>Qualitätskontrolle und schnelle Rückmeldung</b></li></ul>
+  <section class="section dark" id="kunden">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div>
+          <span class="kicker light">Für wen</span>
+          <h2 class="h2">Für Flächen, die täglich funktionieren müssen.</h2>
+        </div>
+        <p class="body-lg" style="color:rgba(255,255,255,.62)">Ein eigener Abschnitt für Zielgruppen hilft Besuchern sofort zu erkennen, ob die Leistung zu ihrem Objekt passt.</p>
+      </div>
+
+      <div class="audience-grid">
+        <article class="audience-card reveal"><span class="label">Gewerbe</span><h3 class="h3">Büros und Unternehmen</h3><p>Regelmäßige Pflege von Arbeitsplätzen, Besprechungsräumen, Küchen, Empfang und Sanitärbereichen.</p></article>
+        <article class="audience-card reveal"><span class="label">Gesundheit</span><h3 class="h3">Praxen und Einrichtungen</h3><p>Strukturierte Reinigung für sensible Bereiche mit klaren Abläufen und abgestimmten Zeitfenstern.</p></article>
+        <article class="audience-card reveal"><span class="label">Immobilien</span><h3 class="h3">Hausverwaltungen und Wohnobjekte</h3><p>Treppenhäuser, Eingangsbereiche und gemeinschaftliche Flächen mit planbarer regelmäßiger Betreuung.</p></article>
+        <article class="audience-card reveal"><span class="label">Bau und Umbau</span><h3 class="h3">Projektflächen vor Übergabe</h3><p>Bauendreinigung und Grundreinigung als sauberer Abschluss nach Sanierung, Ausbau oder Umbau.</p></article>
       </div>
     </div>
   </section>
 
-  <section class="section" id="ablauf">
-    <div class="container"><div class="section-head reveal"><div><span class="eyebrow eyebrow--dark">So funktioniert's</span><h2>Einfach von Anfrage bis Reinigung.</h2></div><p>Ein klarer Prozess reduziert Abstimmungsaufwand und macht Leistungen, Umfang und Erwartungen von Anfang an transparent.</p></div>
-      <div class="process-grid"><article class="process-step reveal"><span class="step-num">01</span><h3>Anfrage & Objekt</h3><p>Sie beschreiben kurz Objekt, Flächen und gewünschten Rhythmus.</p></article><article class="process-step reveal"><span class="step-num">02</span><h3>Plan & Angebot</h3><p>Wir stimmen Leistung und Ablauf ab und erstellen ein passendes Angebot.</p></article><article class="process-step reveal"><span class="step-num">03</span><h3>Start & Qualität</h3><p>Nach Freigabe startet die Reinigung mit klaren Zuständigkeiten.</p></article></div>
+  <section class="section soft">
+    <div class="container feature-split">
+      <div class="feature-photo reveal">
+        <img src="https://images.unsplash.com/photo-1561236478-a10a7659d498?auto=format&fit=crop&q=84&w=1600" alt="Reinigung einer großen Glasfläche">
+      </div>
+      <div class="feature-copy reveal">
+        <span class="kicker">Qualität im Alltag</span>
+        <h2 class="h2">Nicht nur sauber. Auch gut organisiert.</h2>
+        <p class="body-lg">Gerade bei regelmäßiger Reinigung entscheidet der Ablauf über die Qualität. Deshalb wird auf der Website nicht nur beschrieben, was gereinigt wird, sondern auch wie die Zusammenarbeit funktioniert.</p>
+        <div class="benefit-list">
+          <div class="benefit"><strong>Passende Intervalle</strong><span>Täglich, mehrmals pro Woche, wöchentlich oder nach individuellem Bedarf.</span></div>
+          <div class="benefit"><strong>Klare Leistungsbereiche</strong><span>Der Umfang kann je Raum, Etage oder Nutzungszone eindeutig definiert werden.</span></div>
+          <div class="benefit"><strong>Abgestimmte Zeitfenster</strong><span>Reinigung vor, während oder nach den regulären Betriebszeiten.</span></div>
+          <div class="benefit"><strong>Direkte Kommunikation</strong><span>Änderungen oder Zusatzbedarf lassen sich schnell und nachvollziehbar abstimmen.</span></div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="cta-section"><div class="container"><div class="cta-box reveal"><div><span class="eyebrow eyebrow--dark">Auch Sanierung geplant?</span><h2>Zwei Bereiche. Ein Ansprechpartner.</h2></div><div class="cta-actions"><p>Direkt zum zweiten Leistungsbereich wechseln.</p><a class="button button--dark" href="sanierung.html">Sanierung entdecken <span>→</span></a></div></div></div></section>
+  <section class="section white" id="ablauf">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div>
+          <span class="kicker">Ablauf</span>
+          <h2 class="h2">In vier Schritten zur passenden Reinigung.</h2>
+        </div>
+        <p class="body-lg">Der Prozess ist bewusst einfach gehalten, damit ein Interessent sofort versteht, was nach einer Anfrage passiert.</p>
+      </div>
+      <div class="process-grid">
+        <article class="process-step reveal"><span class="step">01</span><h3 class="h3">Bedarf senden</h3><p class="body-md">Objektart, Ort, ungefähre Fläche und gewünschte Leistung übermitteln.</p></article>
+        <article class="process-step reveal"><span class="step">02</span><h3 class="h3">Besichtigung</h3><p class="body-md">Wenn sinnvoll, wird das Objekt angesehen und der tatsächliche Aufwand aufgenommen.</p></article>
+        <article class="process-step reveal"><span class="step">03</span><h3 class="h3">Angebot</h3><p class="body-md">Leistungsumfang, Rhythmus und Rahmenbedingungen werden transparent zusammengefasst.</p></article>
+        <article class="process-step reveal"><span class="step">04</span><h3 class="h3">Start</h3><p class="body-md">Nach Freigabe beginnt die Reinigung entsprechend der abgestimmten Planung.</p></article>
+      </div>
+    </div>
+  </section>
 
-  <section class="section contact-section" id="kontakt"><div class="container contact-grid">
-    <div class="contact-copy reveal"><span class="eyebrow eyebrow--dark">Unverbindlich anfragen</span><h2>Was dürfen wir für Sie sauber machen?</h2><p>Ein paar Angaben genügen für den ersten Überblick. Kontaktdaten und echte Formular-Anbindung werden ergänzt, sobald die Kundendaten vorliegen.</p><div class="contact-placeholder"><strong>Temporärer Demo-Stand</strong><br>Telefon, E-Mail, Adresse, Einsatzgebiet und rechtliche Angaben werden nachgeliefert.</div></div>
-    <form class="contact-form reveal" data-demo-form>
-      <div class="field"><label for="name">Name *</label><input id="name" required placeholder="Ihr Name"></div>
-      <div class="field"><label for="email">E-Mail *</label><input id="email" type="email" required placeholder="name@firma.de"></div>
-      <div class="field"><label for="objekt">Objektart</label><select id="objekt"><option>Büro / Gewerbe</option><option>Mehrfamilienhaus</option><option>Praxis / Kanzlei</option><option>Sonstiges</option></select></div>
-      <div class="field"><label for="rhythmus">Rhythmus</label><select id="rhythmus"><option>Einmalig</option><option>Regelmäßig</option><option>Noch offen</option></select></div>
-      <div class="field field--full"><label for="message">Kurz zum Projekt</label><textarea id="message" placeholder="Fläche, Ort, gewünschte Leistung ..."></textarea></div>
-      <button class="button button--dark field--full" type="submit">Anfrage vorbereiten <span>→</span></button><p class="form-note">Demoformular – Versand wird nach Eintrag der finalen Kontaktdaten aktiviert.</p>
-    </form>
-  </div></section>
+  <section class="section" id="referenzen">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div>
+          <span class="kicker">Referenzen</span>
+          <h2 class="h2">Beispielhafte Projekte für den späteren Referenzbereich.</h2>
+        </div>
+        <p class="body-lg">Diese Karten sind absichtlich als Muster gekennzeichnet. Echte Kundenprojekte können später mit Vorher-Nachher-Bildern und konkretem Leistungsumfang eingetragen werden.</p>
+      </div>
+      <div class="case-grid">
+        <article class="case-card reveal">
+          <img src="https://images.unsplash.com/photo-1437326300822-01d8f13c024f?auto=format&fit=crop&q=82&w=1200" alt="Gebäudereinigung in einem modernen Innenraum">
+          <div class="case-copy"><span class="tag">Beispielprojekt</span><h3 class="h3">Bürofläche</h3><p class="body-md">Regelmäßige Unterhaltsreinigung inklusive Arbeitsplätzen, Küche, Sanitär und Verkehrsflächen.</p></div>
+        </article>
+        <article class="case-card reveal">
+          <img src="https://images.unsplash.com/photo-1561236478-a10a7659d498?auto=format&fit=crop&q=82&w=1200" alt="Fensterreinigung an einem Gebäude">
+          <div class="case-copy"><span class="tag">Beispielprojekt</span><h3 class="h3">Glasflächen</h3><p class="body-md">Periodische Reinigung großflächiger Fenster und Eingangsbereiche eines Gewerbeobjekts.</p></div>
+        </article>
+        <article class="case-card reveal">
+          <img src="https://images.unsplash.com/photo-1771189255372-b0f548998210?auto=format&fit=crop&q=82&w=1200" alt="Moderner Innenraum nach Fertigstellung">
+          <div class="case-copy"><span class="tag">Beispielprojekt</span><h3 class="h3">Bauendreinigung</h3><p class="body-md">Abschließende Reinigung nach Innenausbau vor Übergabe und Nutzung der Fläche.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-  <footer class="footer"><div class="container"><div class="footer-top"><div class="footer-brand"><a class="brand brand--light" href="index.html"><span class="brand-mark">N</span><span>NOVA</span></a><p>Temporäre Markenbezeichnung für die Vorschau. Gebäudereinigung und Sanierung professionell unter einem Dach.</p></div><div class="footer-col"><h4>Navigation</h4><a href="#leistungen">Leistungen</a><a href="#ablauf">Ablauf</a><a href="#kontakt">Kontakt</a></div><div class="footer-col"><h4>Bereiche</h4><a href="reinigung.html">Gebäudereinigung</a><a href="sanierung.html">Sanierung</a></div></div><div class="footer-bottom"><span>© <span data-year></span> NOVA</span><span>Impressum · Datenschutz</span></div></div></footer>
-  <div class="toast" role="status">Danke! Dies ist aktuell die Vorschau – der echte Formularversand wird mit den Kundendaten aktiviert.</div>
-  <script src="app.js"></script>
-</body></html>
+  <section class="section soft">
+    <div class="container faq-wrap">
+      <div class="reveal">
+        <span class="kicker">Häufige Fragen</span>
+        <h2 class="h2" style="margin-top:14px">Was Kunden vor einer Anfrage wissen möchten.</h2>
+      </div>
+      <div class="faq-list reveal">
+        <details><summary>Welche Objekte können gereinigt werden?</summary><p>Für die Vorschau sind Büros, Praxen, Gewerbeflächen, Treppenhäuser und Wohnobjekte vorgesehen. Der finale Umfang wird an das tatsächliche Angebot des Unternehmens angepasst.</p></details>
+        <details><summary>Ist eine regelmäßige Reinigung möglich?</summary><p>Ja. Der Rhythmus kann je nach Bedarf täglich, mehrmals pro Woche, wöchentlich oder individuell geplant werden.</p></details>
+        <details><summary>Gibt es auch einmalige Reinigungen?</summary><p>Ja. Grundreinigung, Bauendreinigung oder andere Sonderleistungen können als einzelne Einsätze dargestellt und angefragt werden.</p></details>
+        <details><summary>Wie entsteht ein Angebot?</summary><p>Nach den ersten Angaben wird der Umfang geprüft. Je nach Objekt kann anschließend eine Besichtigung sinnvoll sein, bevor ein konkretes Angebot erstellt wird.</p></details>
+        <details><summary>Können Leistungen kombiniert werden?</summary><p>Ja. Beispielsweise lassen sich Unterhaltsreinigung, Glasreinigung und zusätzliche periodische Leistungen in einem Konzept zusammenfassen.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white" id="kontakt">
+    <div class="container contact-shell">
+      <div class="contact-copy reveal">
+        <span class="kicker">Anfrage</span>
+        <h2 class="h2">Welches Objekt dürfen wir uns ansehen?</h2>
+        <p class="body-lg">Für ein erstes Angebot reichen einige Eckdaten. Das Formular ist aktuell noch eine Vorschau und wird mit der finalen E-Mail-Adresse oder CRM-Anbindung verbunden.</p>
+        <div class="contact-data">
+          <div><span>Einsatzgebiet</span><strong>Wird mit Kundendaten ergänzt</strong></div>
+          <div><span>Telefon</span><strong>Wird mit Kundendaten ergänzt</strong></div>
+          <div><span>E-Mail</span><strong>Wird mit Kundendaten ergänzt</strong></div>
+        </div>
+      </div>
+      <form class="form-grid reveal" data-demo-form>
+        <div class="field"><label for="name">Name</label><input id="name" required placeholder="Vor- und Nachname"></div>
+        <div class="field"><label for="company">Firma</label><input id="company" placeholder="Firmenname"></div>
+        <div class="field"><label for="email">E-Mail</label><input id="email" type="email" required placeholder="name@firma.de"></div>
+        <div class="field"><label for="phone">Telefon</label><input id="phone" type="tel" placeholder="Telefonnummer"></div>
+        <div class="field"><label for="object">Objekt</label><select id="object"><option>Büro</option><option>Praxis</option><option>Gewerbe</option><option>Mehrfamilienhaus</option><option>Sonstiges</option></select></div>
+        <div class="field"><label for="service">Leistung</label><select id="service"><option>Unterhaltsreinigung</option><option>Glasreinigung</option><option>Grundreinigung</option><option>Bauendreinigung</option><option>Sonstiges</option></select></div>
+        <div class="field full"><label for="message">Projektbeschreibung</label><textarea id="message" placeholder="Ort, Fläche, gewünschter Rhythmus und weitere Informationen"></textarea></div>
+        <button class="btn dark field full" type="submit">Anfrage senden</button>
+        <p class="form-note">Vorschauformular. Der tatsächliche Versand wird nach Erhalt der Kundendaten aktiviert.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="big-banner reveal">
+        <div><span class="kicker">Auch Umbau geplant?</span><h2 class="h2">Sanierung und Reinigung auf einer gemeinsamen Website.</h2></div>
+        <div><p>Besucher können jederzeit direkt in den zweiten Geschäftsbereich wechseln.</p><a class="btn dark" href="sanierung.html">Sanierung ansehen</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a class="brand" href="index.html"><span class="brand-box">N</span><span>NOVA</span></a><p>Temporäre Markenbezeichnung für die Vorschau. Inhalte und Kontaktdaten werden mit den finalen Kundeninformationen ersetzt.</p></div>
+      <div class="footer-col"><h4>Reinigung</h4><a href="#leistungen">Leistungen</a><a href="#kunden">Für wen</a><a href="#ablauf">Ablauf</a></div>
+      <div class="footer-col"><h4>Bereiche</h4><a href="reinigung.html">Gebäudereinigung</a><a href="sanierung.html">Sanierung</a></div>
+      <div class="footer-col"><h4>Rechtliches</h4><span>Impressum folgt</span><span>Datenschutz folgt</span></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year></span> NOVA</span><span>Gebäudereinigung</span></div>
+  </div>
+</footer>
+<div class="toast" role="status">Vielen Dank. Das Formular ist aktuell noch im Vorschau-Modus.</div>
+<script src="app.js"></script>
+</body>
+</html>
