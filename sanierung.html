@@ -1,52 +1,232 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#2d211b">
-  <meta name="description" content="Sanierung, Ausbau und Modernisierung zuverlässig geplant und umgesetzt.">
-  <title>NOVA Sanierung</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#1c1410">
+  <meta name="description" content="Sanierung, Innenausbau und Modernisierung für Wohn- und Gewerbeobjekte.">
+  <title>NOVA | Sanierung</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="build-theme">
-  <nav class="site-nav" aria-label="Hauptnavigation">
-    <a class="brand brand--light" href="index.html"><span class="brand-mark">N</span><span>NOVA</span></a>
-    <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span></button>
-    <div class="nav-links"><a href="#leistungen">Leistungen</a><a href="#ablauf">Ablauf</a><a href="#kontakt">Kontakt</a><a class="nav-switch" href="reinigung.html">Gebäudereinigung ↗</a><a class="nav-button" href="#kontakt">Projekt anfragen</a></div>
-  </nav>
+<body>
+<header class="site-header">
+  <div class="nav-shell">
+    <a class="brand" href="index.html"><span class="brand-box">N</span><span>NOVA</span></a>
+    <button class="menu-button" aria-label="Menü öffnen" aria-expanded="false"><i></i><i></i></button>
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#projekte">Projekte</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#faq">FAQ</a>
+      <a href="reinigung.html">Gebäudereinigung</a>
+      <a class="nav-cta" href="#kontakt">Projekt anfragen</a>
+    </nav>
+  </div>
+</header>
 
-  <header class="sub-hero sub-hero--build">
-    <div class="hero-backdrop"><span class="hero-mesh"></span><span class="hero-shape"></span></div>
-    <div class="container hero-content reveal"><span class="eyebrow">Sanierung · Ausbau · Modernisierung</span><h1>Neu denken.<br>Besser bauen.</h1><p>Von der ersten Idee bis zur sauberen Übergabe: Sanierungslösungen für Wohn- und Gewerbeobjekte mit klarer Planung und verlässlicher Umsetzung.</p><div class="hero-actions"><a class="button button--lime" href="#kontakt">Projekt besprechen <span>→</span></a><a class="button button--light" href="#leistungen">Leistungen ansehen</a></div></div>
-    <span class="hero-note">Scrollen zum Entdecken</span>
-  </header>
-
-  <section class="intro-strip"><div class="container intro-grid reveal"><h2>Aus Bestand wird<br>neue Qualität.</h2><p>Sanierung braucht mehr als einzelne Gewerke. Entscheidend sind Planung, Abstimmung und eine Umsetzung, bei der Zeit, Qualität und Details zusammenpassen.</p></div></section>
-
-  <section class="section" id="leistungen"><div class="container">
-    <div class="section-head reveal"><div><span class="eyebrow eyebrow--dark">Leistungsbereiche</span><h2>Vom Innenausbau bis zur Modernisierung.</h2></div><p>Die Auswahl orientiert sich an typischen Sanierungsleistungen und wird nach Kundengespräch auf das tatsächliche Angebot zugeschnitten.</p></div>
-    <div class="service-grid">
-      <article class="service-card reveal" style="--accent:rgba(255,119,74,.16)"><div class="service-icon">▤</div><h3>Innenausbau</h3><p>Strukturierte Umsetzung für neue Raumaufteilungen, Oberflächen und funktionale Innenbereiche.</p></article>
-      <article class="service-card reveal" style="--accent:rgba(222,179,120,.2)"><div class="service-icon">▱</div><h3>Trockenbau</h3><p>Flexible Wand- und Deckensysteme für Umbau, Ausbau und moderne Raumkonzepte.</p></article>
-      <article class="service-card reveal" style="--accent:rgba(245,205,100,.18)"><div class="service-icon">◫</div><h3>Maler- & Oberflächenarbeiten</h3><p>Saubere Wand- und Deckenflächen als sichtbarer Abschluss einer gelungenen Sanierung.</p></article>
-      <article class="service-card reveal" style="--accent:rgba(130,190,255,.15)"><div class="service-icon">⌁</div><h3>Bodenarbeiten</h3><p>Vorbereitung, Aufarbeitung und Neuverlegung passend zu Nutzung, Optik und Beanspruchung.</p></article>
-      <article class="service-card reveal" style="--accent:rgba(184,255,61,.17)"><div class="service-icon">⌂</div><h3>Wohnungssanierung</h3><p>Koordinierte Modernisierung einzelner Räume oder kompletter Wohneinheiten.</p></article>
-      <article class="service-card reveal" style="--accent:rgba(150,120,255,.14)"><div class="service-icon">＋</div><h3>Individuelle Projekte</h3><p>Für besondere Anforderungen entwickeln wir den Ablauf passend zum Objekt und Projektziel.</p></article>
+<main>
+  <section class="inner-hero reno">
+    <img src="https://images.unsplash.com/photo-1711296168555-ea2526321306?auto=format&fit=crop&q=84&w=2200" alt="Innenraum während einer Sanierung">
+    <div class="container hero-copy reveal">
+      <span class="kicker light">Sanierung, Ausbau und Modernisierung</span>
+      <h1 class="display">Aus Bestand wird neue Qualität.</h1>
+      <p>Von einzelnen Ausbauarbeiten bis zur umfassenden Modernisierung: Wir strukturieren den Projektablauf, koordinieren die notwendigen Schritte und führen Flächen sauber zur Übergabe.</p>
+      <div class="btn-row">
+        <a class="btn lime" href="#kontakt">Projekt besprechen</a>
+        <a class="btn outline" href="#leistungen">Leistungen ansehen</a>
+      </div>
+      <div class="hero-meta">
+        <span class="pill">Innenausbau</span>
+        <span class="pill">Trockenbau</span>
+        <span class="pill">Boden</span>
+        <span class="pill">Modernisierung</span>
+      </div>
     </div>
-  </div></section>
+  </section>
 
-  <section class="section feature-band"><div class="container feature-grid"><div class="feature-visual reveal"><span class="visual-ring"></span><span class="visual-label">Planung · Koordination · Umsetzung</span></div><div class="feature-copy reveal"><span class="eyebrow">Projekt statt Baustelle</span><h2>Klare Schritte. Saubere Übergabe.</h2><p>Ein gutes Ergebnis beginnt vor dem ersten Handgriff. Deshalb werden Umfang, Reihenfolge und Schnittstellen früh geklärt und verständlich abgestimmt.</p><ul class="check-list"><li><span class="check">✓</span><b>Transparenter Projektumfang und klare Abstimmung</b></li><li><span class="check">✓</span><b>Koordinierter Ablauf über die einzelnen Arbeitsschritte</b></li><li><span class="check">✓</span><b>Fokus auf saubere Details und verlässliche Übergabe</b></li></ul></div></div></section>
+  <section class="stats-strip">
+    <div class="container stats-grid">
+      <div class="stat-intro"><strong>Beispielhafter Aufbau für den späteren Sanierungsbereich</strong></div>
+      <div class="stat"><strong>Planung</strong><span>Umfang, Reihenfolge und Schnittstellen früh klären</span></div>
+      <div class="stat"><strong>Koordination</strong><span>Arbeitsschritte nachvollziehbar organisieren</span></div>
+      <div class="stat"><strong>Übergabe</strong><span>Projekt sauber und strukturiert abschließen</span></div>
+    </div>
+  </section>
 
-  <section class="section" id="ablauf"><div class="container"><div class="section-head reveal"><div><span class="eyebrow eyebrow--dark">Projektablauf</span><h2>Von der Idee zur fertigen Fläche.</h2></div><p>Die genaue Ausführung hängt vom Objekt ab. Der Grundprozess bleibt bewusst einfach und nachvollziehbar.</p></div><div class="process-grid"><article class="process-step reveal"><span class="step-num">01</span><h3>Aufnahme & Beratung</h3><p>Projektziel, Bestand und gewünschter Umfang werden gemeinsam erfasst.</p></article><article class="process-step reveal"><span class="step-num">02</span><h3>Planung & Angebot</h3><p>Die notwendigen Schritte werden strukturiert und transparent angeboten.</p></article><article class="process-step reveal"><span class="step-num">03</span><h3>Umsetzung & Übergabe</h3><p>Die Arbeiten werden koordiniert durchgeführt und sauber abgeschlossen.</p></article></div></div></section>
+  <section class="section" id="leistungen">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div>
+          <span class="kicker">Leistungen</span>
+          <h2 class="h2">Sanierungsleistungen für Wohn- und Gewerbeobjekte.</h2>
+        </div>
+        <p class="body-lg">Die Inhalte sind bewusst umfangreicher als in der ersten Version. Sie dienen als realistische Musterstruktur und können später exakt auf das tatsächliche Leistungsportfolio des Kunden angepasst werden.</p>
+      </div>
 
-  <section class="cta-section"><div class="container"><div class="cta-box reveal"><div><span class="eyebrow eyebrow--dark">Nach der Sanierung</span><h2>Direkt sauber übergeben.</h2></div><div class="cta-actions"><p>Gebäudereinigung als zweiter Bereich der gleichen Website.</p><a class="button button--dark" href="reinigung.html">Zur Gebäudereinigung <span>→</span></a></div></div></div></section>
+      <div class="services-grid">
+        <article class="service-card reveal"><span class="service-num">01</span><h3 class="h3">Innenausbau</h3><p class="body-md">Umbau und Anpassung von Innenräumen mit Fokus auf Funktion, Nutzung und saubere Ausführung.</p></article>
+        <article class="service-card reveal"><span class="service-num">02</span><h3 class="h3">Trockenbau</h3><p class="body-md">Neue Raumaufteilungen, Vorsatzschalen, Deckenlösungen und vorbereitende Ausbauarbeiten.</p></article>
+        <article class="service-card reveal"><span class="service-num">03</span><h3 class="h3">Malerarbeiten</h3><p class="body-md">Vorbereitung und Gestaltung von Wänden und Decken als Teil einer vollständigen Modernisierung.</p></article>
+        <article class="service-card reveal"><span class="service-num">04</span><h3 class="h3">Bodenarbeiten</h3><p class="body-md">Entfernung, Vorbereitung, Aufarbeitung und Neuverlegung abhängig von Fläche und Nutzung.</p></article>
+        <article class="service-card reveal"><span class="service-num">05</span><h3 class="h3">Wohnungssanierung</h3><p class="body-md">Koordinierte Modernisierung einzelner Räume oder kompletter Wohneinheiten im Bestand.</p></article>
+        <article class="service-card reveal"><span class="service-num">06</span><h3 class="h3">Gewerbesanierung</h3><p class="body-md">Anpassung und Erneuerung von Büro-, Verkaufs- oder Betriebsflächen für neue Nutzungsanforderungen.</p></article>
+        <article class="service-card reveal"><span class="service-num">07</span><h3 class="h3">Oberflächen und Details</h3><p class="body-md">Saubere Abschlussarbeiten an Wänden, Decken, Anschlüssen und sichtbaren Flächen.</p></article>
+        <article class="service-card reveal"><span class="service-num">08</span><h3 class="h3">Rückbau und Vorbereitung</h3><p class="body-md">Vorbereitende Arbeiten für neue Raumkonzepte und anschließende Ausbau- oder Sanierungsmaßnahmen.</p></article>
+        <article class="service-card reveal"><span class="service-num">09</span><h3 class="h3">Individuelle Projekte</h3><p class="body-md">Für besondere Anforderungen kann der Projektumfang individuell zusammengestellt und geplant werden.</p></article>
+      </div>
+    </div>
+  </section>
 
-  <section class="section contact-section" id="kontakt"><div class="container contact-grid"><div class="contact-copy reveal"><span class="eyebrow eyebrow--dark">Projektanfrage</span><h2>Was möchten Sie verändern?</h2><p>Beschreiben Sie kurz das Vorhaben. Der finale Kontaktweg wird aktiviert, sobald die Daten des Kunden vorliegen.</p><div class="contact-placeholder"><strong>Temporärer Demo-Stand</strong><br>Firmenname, Logo, Kontaktdaten, Einsatzgebiet und rechtliche Seiten werden anschließend ersetzt.</div></div>
-    <form class="contact-form reveal" data-demo-form><div class="field"><label for="name">Name *</label><input id="name" required placeholder="Ihr Name"></div><div class="field"><label for="email">E-Mail *</label><input id="email" type="email" required placeholder="name@firma.de"></div><div class="field"><label for="type">Projektart</label><select id="type"><option>Wohnung</option><option>Haus</option><option>Gewerbe</option><option>Sonstiges</option></select></div><div class="field"><label for="status">Projektstatus</label><select id="status"><option>Erste Idee</option><option>Konkret geplant</option><option>Kurzfristig</option></select></div><div class="field field--full"><label for="message">Kurz zum Projekt</label><textarea id="message" placeholder="Ort, Umfang, gewünschte Arbeiten ..."></textarea></div><button class="button button--dark field--full" type="submit">Anfrage vorbereiten <span>→</span></button><p class="form-note">Demoformular – Versand wird nach Eintrag der finalen Kontaktdaten aktiviert.</p></form>
-  </div></section>
+  <section class="section dark">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div>
+          <span class="kicker light">Projektarten</span>
+          <h2 class="h2">Für kleine Maßnahmen und umfassende Veränderungen.</h2>
+        </div>
+        <p class="body-lg" style="color:rgba(255,255,255,.62)">Der Bereich zeigt dem Kunden, dass nicht nur einzelne Arbeiten, sondern unterschiedliche Projekttypen verständlich dargestellt werden können.</p>
+      </div>
 
-  <footer class="footer"><div class="container"><div class="footer-top"><div class="footer-brand"><a class="brand brand--light" href="index.html"><span class="brand-mark">N</span><span>NOVA</span></a><p>Temporäre Markenbezeichnung für die Vorschau. Gebäudereinigung und Sanierung professionell unter einem Dach.</p></div><div class="footer-col"><h4>Navigation</h4><a href="#leistungen">Leistungen</a><a href="#ablauf">Ablauf</a><a href="#kontakt">Kontakt</a></div><div class="footer-col"><h4>Bereiche</h4><a href="reinigung.html">Gebäudereinigung</a><a href="sanierung.html">Sanierung</a></div></div><div class="footer-bottom"><span>© <span data-year></span> NOVA</span><span>Impressum · Datenschutz</span></div></div></footer>
-  <div class="toast" role="status">Danke! Dies ist aktuell die Vorschau – der echte Formularversand wird mit den Kundendaten aktiviert.</div>
-  <script src="app.js"></script>
-</body></html>
+      <div class="audience-grid">
+        <article class="audience-card reveal"><span class="label">Wohnen</span><h3 class="h3">Wohnungen und Häuser</h3><p>Modernisierung von Bestandsflächen, einzelne Räume oder komplette Wohneinheiten.</p></article>
+        <article class="audience-card reveal"><span class="label">Gewerbe</span><h3 class="h3">Büro- und Geschäftsflächen</h3><p>Umbau bestehender Flächen für neue Teams, neue Nutzung oder einen zeitgemäßen Auftritt.</p></article>
+        <article class="audience-card reveal"><span class="label">Vermietung</span><h3 class="h3">Objekte vor Neuvermietung</h3><p>Gezielte Aufbereitung und Modernisierung zwischen zwei Mietverhältnissen oder vor Übergabe.</p></article>
+        <article class="audience-card reveal"><span class="label">Bestand</span><h3 class="h3">Teilmodernisierung</h3><p>Einzelne Maßnahmen dort, wo nicht das gesamte Objekt saniert werden muss.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container feature-split">
+      <div class="feature-photo reveal">
+        <img src="https://images.unsplash.com/photo-1771189255372-b0f548998210?auto=format&fit=crop&q=84&w=1600" alt="Moderner Innenraum mit hochwertiger Architektur">
+      </div>
+      <div class="feature-copy reveal">
+        <span class="kicker">Von der Baustelle zur fertigen Fläche</span>
+        <h2 class="h2">Gute Sanierung beginnt mit einem klaren Plan.</h2>
+        <p class="body-lg">Der spätere Kunde soll auf der Website sofort verstehen, dass Planung und Koordination genauso wichtig sind wie die handwerkliche Umsetzung.</p>
+        <div class="benefit-list">
+          <div class="benefit"><strong>Bestand aufnehmen</strong><span>Ausgangslage, Ziel und gewünschte Nutzung werden vorab geklärt.</span></div>
+          <div class="benefit"><strong>Arbeitsschritte definieren</strong><span>Die Reihenfolge der Maßnahmen wird strukturiert und verständlich abgestimmt.</span></div>
+          <div class="benefit"><strong>Schnittstellen koordinieren</strong><span>Zusammenhängende Arbeiten werden nicht isoliert, sondern im Gesamtprojekt betrachtet.</span></div>
+          <div class="benefit"><strong>Sauber abschließen</strong><span>Der letzte Schritt ist eine nachvollziehbare Übergabe der fertigen Fläche.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white" id="ablauf">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div>
+          <span class="kicker">Projektablauf</span>
+          <h2 class="h2">Vier Schritte von der Idee bis zur Übergabe.</h2>
+        </div>
+        <p class="body-lg">Ein klar dargestellter Prozess reduziert Unsicherheit und macht aus einer allgemeinen Kontaktanfrage ein konkretes Projektgespräch.</p>
+      </div>
+      <div class="process-grid">
+        <article class="process-step reveal"><span class="step">01</span><h3 class="h3">Projektaufnahme</h3><p class="body-md">Ort, Fläche, aktueller Zustand und gewünschtes Ergebnis werden aufgenommen.</p></article>
+        <article class="process-step reveal"><span class="step">02</span><h3 class="h3">Besichtigung</h3><p class="body-md">Vor Ort werden Umfang, Besonderheiten und relevante Schnittstellen genauer geprüft.</p></article>
+        <article class="process-step reveal"><span class="step">03</span><h3 class="h3">Planung und Angebot</h3><p class="body-md">Arbeitsschritte und Leistungsumfang werden strukturiert zusammengefasst.</p></article>
+        <article class="process-step reveal"><span class="step">04</span><h3 class="h3">Umsetzung und Übergabe</h3><p class="body-md">Die Arbeiten werden koordiniert ausgeführt und anschließend sauber abgeschlossen.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projekte">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div>
+          <span class="kicker">Beispielprojekte</span>
+          <h2 class="h2">Referenzen später mit echten Projekten ersetzen.</h2>
+        </div>
+        <p class="body-lg">Hier können später Vorher-Nachher-Bilder, Projektart, Ort, Umfang und besondere Leistungen gezeigt werden. Aktuell sind die Einträge eindeutig als Muster gekennzeichnet.</p>
+      </div>
+      <div class="case-grid">
+        <article class="case-card reveal">
+          <img src="https://images.unsplash.com/photo-1711296168555-ea2526321306?auto=format&fit=crop&q=82&w=1200" alt="Innenraum während des Umbaus">
+          <div class="case-copy"><span class="tag">Beispielprojekt</span><h3 class="h3">Wohnung im Bestand</h3><p class="body-md">Rückbau, Trockenbau, Oberflächen und Boden als zusammenhängende Modernisierung.</p></div>
+        </article>
+        <article class="case-card reveal">
+          <img src="https://images.unsplash.com/photo-1771189255372-b0f548998210?auto=format&fit=crop&q=82&w=1200" alt="Moderner fertiggestellter Innenraum">
+          <div class="case-copy"><span class="tag">Beispielprojekt</span><h3 class="h3">Gewerbefläche</h3><p class="body-md">Anpassung der Innenräume für neue Nutzung und anschließende saubere Übergabe.</p></div>
+        </article>
+        <article class="case-card reveal">
+          <img src="https://images.unsplash.com/photo-1762497403309-2a2c2d78a380?auto=format&fit=crop&q=82&w=1200" alt="Modernes Bestandsgebäude">
+          <div class="case-copy"><span class="tag">Beispielprojekt</span><h3 class="h3">Bestandsmodernisierung</h3><p class="body-md">Gezielte Maßnahmen zur optischen und funktionalen Aufwertung bestehender Flächen.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft" id="faq">
+    <div class="container faq-wrap">
+      <div class="reveal">
+        <span class="kicker">Häufige Fragen</span>
+        <h2 class="h2" style="margin-top:14px">Wichtige Fragen vor dem Projektstart.</h2>
+      </div>
+      <div class="faq-list reveal">
+        <details><summary>Welche Sanierungsarbeiten werden angeboten?</summary><p>Die Vorschau enthält Innenausbau, Trockenbau, Malerarbeiten, Bodenarbeiten, Wohnungs- und Gewerbesanierung. Die endgültige Liste wird auf das reale Leistungsspektrum des Kunden angepasst.</p></details>
+        <details><summary>Ist auch eine Teilsanierung möglich?</summary><p>Ja. Nicht jedes Projekt muss eine Komplettsanierung sein. Einzelne Räume oder klar abgegrenzte Maßnahmen können ebenfalls dargestellt und angefragt werden.</p></details>
+        <details><summary>Wie läuft die Angebotserstellung ab?</summary><p>Nach einer ersten Projektbeschreibung folgt bei Bedarf eine Besichtigung. Auf dieser Basis kann der Umfang genauer definiert und ein passendes Angebot erstellt werden.</p></details>
+        <details><summary>Kann nach der Sanierung auch gereinigt werden?</summary><p>Ja. Genau dafür ist die Kombination der beiden Website-Bereiche sinnvoll. Bauendreinigung oder Grundreinigung können als ergänzende Leistung dargestellt werden.</p></details>
+        <details><summary>Kann ich Bilder oder Pläne mitsenden?</summary><p>In der finalen Version kann das Anfrageformular um einen Datei-Upload für Fotos, Grundrisse oder andere Projektunterlagen erweitert werden.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white" id="kontakt">
+    <div class="container contact-shell">
+      <div class="contact-copy reveal">
+        <span class="kicker">Projektanfrage</span>
+        <h2 class="h2">Was möchten Sie verändern?</h2>
+        <p class="body-lg">Für eine erste Einschätzung genügen ein paar Eckdaten. Das Formular wird mit der finalen Kontaktadresse oder dem gewünschten CRM verbunden, sobald die Kundendaten vorliegen.</p>
+        <div class="contact-data">
+          <div><span>Einsatzgebiet</span><strong>Wird mit Kundendaten ergänzt</strong></div>
+          <div><span>Telefon</span><strong>Wird mit Kundendaten ergänzt</strong></div>
+          <div><span>E-Mail</span><strong>Wird mit Kundendaten ergänzt</strong></div>
+        </div>
+      </div>
+
+      <form class="form-grid reveal" data-demo-form>
+        <div class="field"><label for="name">Name</label><input id="name" required placeholder="Vor- und Nachname"></div>
+        <div class="field"><label for="company">Firma</label><input id="company" placeholder="Firmenname"></div>
+        <div class="field"><label for="email">E-Mail</label><input id="email" type="email" required placeholder="name@firma.de"></div>
+        <div class="field"><label for="phone">Telefon</label><input id="phone" type="tel" placeholder="Telefonnummer"></div>
+        <div class="field"><label for="project">Projektart</label><select id="project"><option>Wohnung</option><option>Haus</option><option>Büro oder Gewerbe</option><option>Teilmodernisierung</option><option>Sonstiges</option></select></div>
+        <div class="field"><label for="status">Zeitraum</label><select id="status"><option>Noch offen</option><option>In den nächsten 3 Monaten</option><option>In den nächsten 6 Monaten</option><option>Kurzfristig</option></select></div>
+        <div class="field full"><label for="message">Projektbeschreibung</label><textarea id="message" placeholder="Ort, ungefähre Fläche, aktueller Zustand und gewünschte Arbeiten"></textarea></div>
+        <button class="btn dark field full" type="submit">Projektanfrage senden</button>
+        <p class="form-note">Vorschauformular. Der tatsächliche Versand wird nach Erhalt der Kundendaten aktiviert.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="big-banner reno reveal">
+        <div><span class="kicker">Nach dem Umbau</span><h2 class="h2">Fertig gebaut. Direkt sauber übergeben.</h2></div>
+        <div><p>Der zweite Geschäftsbereich kann die abschließende Reinigung direkt ergänzen.</p><a class="btn dark" href="reinigung.html">Gebäudereinigung ansehen</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a class="brand" href="index.html"><span class="brand-box">N</span><span>NOVA</span></a><p>Temporäre Markenbezeichnung für die Vorschau. Leistungen, Referenzen und Kontaktdaten werden mit den finalen Kundeninformationen ersetzt.</p></div>
+      <div class="footer-col"><h4>Sanierung</h4><a href="#leistungen">Leistungen</a><a href="#projekte">Projekte</a><a href="#ablauf">Ablauf</a></div>
+      <div class="footer-col"><h4>Bereiche</h4><a href="reinigung.html">Gebäudereinigung</a><a href="sanierung.html">Sanierung</a></div>
+      <div class="footer-col"><h4>Rechtliches</h4><span>Impressum folgt</span><span>Datenschutz folgt</span></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year></span> NOVA</span><span>Sanierung</span></div>
+  </div>
+</footer>
+<div class="toast" role="status">Vielen Dank. Das Formular ist aktuell noch im Vorschau-Modus.</div>
+<script src="app.js"></script>
+</body>
+</html>
