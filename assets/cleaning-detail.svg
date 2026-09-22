@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="t d">
+<title id="t">Glasreinigung</title><desc id="d">Illustrative Glasfassade mit Reinigungspersonal.</desc>
+<defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#eef7f2"/><stop offset="1" stop-color="#b7cbc0"/></linearGradient></defs>
+<rect width="1600" height="1000" fill="url(#g)"/><g fill="#dcebe4" stroke="#fff" stroke-width="9">
+<rect x="40" y="40" width="355" height="730"/><rect x="415" y="40" width="355" height="730"/><rect x="790" y="40" width="355" height="730"/><rect x="1165" y="40" width="395" height="730"/>
+</g><rect y="770" width="1600" height="230" fill="#c5cec8"/>
+<g transform="translate(440 280)"><circle cx="75" cy="55" r="46" fill="#303b35"/><rect x="22" y="105" width="120" height="300" rx="44" fill="#136147"/>
+<rect x="40" y="395" width="38" height="270" rx="15" fill="#303a35"/><rect x="93" y="395" width="38" height="270" rx="15" fill="#303a35"/>
+<path d="M130 155 L285 80 L300 112 L142 215 Z" fill="#136147"/><line x1="292" y1="94" x2="510" y2="-95" stroke="#45524b" stroke-width="15"/><rect x="488" y="-125" width="68" height="30" rx="8" transform="rotate(-40 488 -125)" fill="#28322d"/>
+</g>
+<rect x="250" y="720" width="150" height="160" rx="22" fill="#56655d"/><circle cx="290" cy="892" r="22" fill="#222925"/><circle cx="360" cy="892" r="22" fill="#222925"/>
+</svg>
