@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="t d">
+<title id="t">Sanierung im Innenraum</title><desc id="d">Illustrative Baustelle während einer Innenraumsanierung.</desc>
+<defs><linearGradient id="bg" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#ded3c7"/><stop offset="1" stop-color="#a88e78"/></linearGradient></defs>
+<rect width="1600" height="1000" fill="url(#bg)"/><rect y="720" width="1600" height="280" fill="#8d7968"/>
+<rect x="680" y="120" width="470" height="510" fill="#5e6662"/><rect x="720" y="158" width="390" height="435" fill="#dbe8e3"/><path d="M915 158 V593 M720 375 H1110" stroke="#8b9992" stroke-width="10"/>
+<g fill="#c7b5a3"><rect x="80" y="140" width="300" height="500" rx="8"/><rect x="1220" y="140" width="290" height="500" rx="8"/></g>
+<g stroke="#8a6c55" stroke-width="11" fill="none"><path d="M220 300 L305 850 M395 290 L485 850"/><path d="M240 390 L410 380 M250 470 L425 460 M265 550 L438 540 M278 630 L452 620"/></g>
+<rect x="520" y="700" width="520" height="56" rx="12" fill="#6f513b"/><rect x="570" y="754" width="30" height="185" fill="#5c4434"/><rect x="960" y="754" width="30" height="185" fill="#5c4434"/>
+<g transform="translate(1040 470)"><circle cx="65" cy="48" r="42" fill="#3b3a36"/><rect x="18" y="95" width="108" height="200" rx="35" fill="#4e5b54"/><path d="M20 130 L-100 210 L-82 244 L42 182 Z" fill="#4e5b54"/><rect x="35" y="286" width="34" height="220" rx="14" fill="#373835"/><rect x="82" y="286" width="34" height="220" rx="14" fill="#373835"/></g>
+<g opacity=".3" stroke="#725d4c" stroke-width="3"><path d="M80 180 H370 M80 240 H370 M80 300 H370 M1220 220 H1500 M1220 280 H1500"/></g>
+</svg>
