@@ -496,3 +496,74 @@ details p{margin:0;padding:0 0 22px;max-width:760px;color:var(--muted);line-heig
   .landing-backdrop{animation:none!important}
   .parallax-media>img,.inner-hero>img{transform:none!important}
 }
+
+
+/* Performance pass: compositor-only motion */
+.nav-shell{
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  background:rgba(16,22,18,.96);
+}
+.reveal{
+  filter:none!important;
+  --motion-x:0px;
+  --motion-y:26px;
+  --motion-scale:1;
+  --motion-rotate:0deg;
+  opacity:0;
+  transform:translate3d(var(--motion-x),var(--motion-y),0) scale(var(--motion-scale)) rotate(var(--motion-rotate));
+  transition:
+    opacity .52s ease var(--motion-delay),
+    transform .68s cubic-bezier(.16,1,.3,1) var(--motion-delay);
+  will-change:auto;
+}
+.reveal.visible{
+  opacity:1;
+  transform:translate3d(0,0,0) scale(1) rotate(0);
+}
+.reveal.motion-left{--motion-x:-34px;--motion-y:6px}
+.reveal.motion-right{--motion-x:34px;--motion-y:6px}
+.reveal.motion-scale{--motion-y:15px;--motion-scale:.97}
+.reveal.motion-tilt-left{--motion-x:-18px;--motion-y:22px;--motion-rotate:-1deg}
+.reveal.motion-tilt-right{--motion-x:18px;--motion-y:22px;--motion-rotate:1deg}
+.reveal.motion-rise{--motion-y:38px}
+
+.motion-title{
+  opacity:0;
+  transform:translate3d(0,24px,0);
+  clip-path:none!important;
+  transition:opacity .5s ease,transform .7s cubic-bezier(.16,1,.3,1);
+}
+.motion-title.title-visible{opacity:1;transform:translate3d(0,0,0)}
+
+.media-reveal{
+  position:relative;
+  opacity:0;
+  clip-path:none!important;
+  transform:translate3d(0,20px,0) scale(.985);
+  transition:opacity .55s ease,transform .78s cubic-bezier(.16,1,.3,1);
+}
+.media-reveal.media-visible{opacity:1;transform:translate3d(0,0,0) scale(1)}
+
+.parallax-media>img,.inner-hero>img{
+  will-change:auto;
+}
+@media (min-width:1025px) and (pointer:fine){
+  .parallax-media>img{
+    transform:translate3d(0,var(--parallax-y,0px),0) scale(1.035);
+  }
+  .inner-hero>img{
+    transform:translate3d(0,var(--hero-parallax,0px),0) scale(1.02);
+  }
+}
+@media (max-width:1024px), (pointer:coarse){
+  .parallax-media>img,.inner-hero>img{
+    transform:none!important;
+  }
+  .scroll-progress{height:2px}
+  .reveal.motion-left,.reveal.motion-right,.reveal.motion-tilt-left,.reveal.motion-tilt-right{
+    --motion-x:0px;
+    --motion-y:22px;
+    --motion-rotate:0deg;
+  }
+}
