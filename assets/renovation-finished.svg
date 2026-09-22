@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="t d">
+<title id="t">Fertig sanierter Innenraum</title><desc id="d">Illustrative moderne Innenarchitektur nach einer Sanierung.</desc>
+<defs><linearGradient id="wall" x1="0" x2="1"><stop stop-color="#f4f0e9"/><stop offset="1" stop-color="#ded4c8"/></linearGradient></defs>
+<rect width="1600" height="1000" fill="url(#wall)"/><rect y="690" width="1600" height="310" fill="#b28d6c"/>
+<rect x="90" y="180" width="390" height="510" rx="8" fill="#2d3430"/><g stroke="#77837b" stroke-opacity=".5"><path d="M90 300 H480 M90 420 H480 M90 540 H480 M220 180 V690 M350 180 V690"/></g>
+<rect x="860" y="130" width="620" height="500" rx="10" fill="#94aaa1"/><rect x="900" y="170" width="540" height="420" fill="#e0ece7"/><path d="M1170 170 V590" stroke="#9caca5" stroke-width="8"/>
+<rect x="600" y="650" width="650" height="75" rx="20" fill="#75533d"/><rect x="730" y="720" width="34" height="210" fill="#5d4536"/><rect x="1090" y="720" width="34" height="210" fill="#5d4536"/>
+<g fill="#9b6d4b"><rect x="505" y="660" width="150" height="175" rx="34"/><rect x="1210" y="660" width="150" height="175" rx="34"/></g>
+<g fill="#494f4b"><rect x="540" y="820" width="18" height="130"/><rect x="600" y="820" width="18" height="130"/><rect x="1245" y="820" width="18" height="130"/><rect x="1305" y="820" width="18" height="130"/></g>
+<ellipse cx="940" cy="625" rx="72" ry="22" fill="#5f735f"/><path d="M940 625 C890 560 900 500 940 455 C980 505 990 560 940 625Z" fill="#6f8b70"/><path d="M920 615 C845 570 830 520 845 470 C900 500 930 550 920 615Z" fill="#78977a"/><path d="M960 615 C1035 570 1050 520 1035 470 C980 500 950 550 960 615Z" fill="#78977a"/>
+</svg>
