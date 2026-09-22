@@ -291,3 +291,74 @@ details p{margin:0;padding:0 0 22px;max-width:760px;color:var(--muted);line-heig
   *{transition:none!important}
   .reveal{opacity:1;transform:none}
 }
+
+
+/* Area selector landing */
+.landing-page{overflow:hidden;background:#0b110e}
+.landing-shell{position:fixed;inset:0;overflow:hidden;color:#fff}
+.landing-backdrop{position:absolute;inset:0;background:
+  linear-gradient(90deg,rgba(8,15,11,.92),rgba(8,15,11,.54)),
+  url("assets/renovation-finished.svg") center/cover no-repeat;transform:scale(1.03)}
+.landing-backdrop:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 18% 20%,rgba(201,255,82,.18),transparent 28%),linear-gradient(180deg,transparent 45%,rgba(5,9,7,.68))}
+.landing-brand{position:absolute;z-index:2;left:38px;right:38px;top:30px;display:flex;align-items:center;justify-content:space-between}
+.landing-label{font-size:12px;color:rgba(255,255,255,.56);text-transform:uppercase;letter-spacing:.14em}
+.landing-copy{position:absolute;z-index:2;left:max(38px,5vw);bottom:54px;max-width:620px}
+.landing-copy h1{font-family:"Manrope",Arial,sans-serif;font-size:clamp(52px,7vw,96px);line-height:.9;letter-spacing:-.065em;margin:14px 0 22px}
+.landing-copy p{max-width:480px;color:rgba(255,255,255,.65);font-size:17px;line-height:1.6;margin:0}
+
+.area-modal{position:fixed;z-index:500;inset:0;display:grid;place-items:center;padding:24px;background:rgba(4,8,6,.62);backdrop-filter:blur(14px)}
+.area-modal-panel{width:min(1080px,100%);max-height:calc(100svh - 48px);overflow:auto;background:#f7f6f1;border:1px solid rgba(255,255,255,.22);border-radius:28px;box-shadow:0 34px 100px rgba(0,0,0,.34);padding:30px}
+.area-modal-head{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:end;padding:4px 4px 26px}
+.area-modal-head h1{font-family:"Manrope",Arial,sans-serif;font-size:clamp(30px,4vw,50px);line-height:1;letter-spacing:-.05em;margin:10px 0 0}
+.area-modal-head p{font-size:14px;line-height:1.65;color:#67716b;margin:0}
+.area-choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.area-choice{display:block;background:#fff;border:1px solid #dde2de;border-radius:22px;overflow:hidden;transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+.area-choice:hover{transform:translateY(-4px);box-shadow:0 22px 50px rgba(12,22,16,.12)}
+.area-choice-cleaning:hover{border-color:#a6cc78}
+.area-choice-renovation:hover{border-color:#d9a083}
+.area-choice-media{height:235px;overflow:hidden;background:#dce6e0}
+.area-choice-media img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.area-choice:hover .area-choice-media img{transform:scale(1.025)}
+.area-choice-body{display:grid;grid-template-columns:auto 1fr;gap:18px;padding:24px}
+.area-choice-index{width:38px;height:38px;border-radius:999px;display:grid;place-items:center;font-family:"Manrope",Arial,sans-serif;font-size:12px;font-weight:800;background:#edf1ed}
+.area-choice-cleaning .area-choice-index{background:#e4f3da;color:#23573c}
+.area-choice-renovation .area-choice-index{background:#f4e1d7;color:#72432f}
+.area-choice h2{font-family:"Manrope",Arial,sans-serif;font-size:29px;line-height:1.05;letter-spacing:-.04em;margin:7px 0 10px}
+.area-choice p{font-size:13px;line-height:1.6;color:#69726c;margin:0 0 20px}
+.area-choice-link{display:inline-block;font-size:13px;font-weight:800;padding-bottom:4px;border-bottom:1px solid currentColor}
+.area-choice-cleaning .area-choice-link{color:#245f43}
+.area-choice-renovation .area-choice-link{color:#8a4b31}
+.area-modal-foot{display:flex;justify-content:space-between;gap:20px;padding:18px 4px 0;color:#89908b;font-size:10px;line-height:1.4}
+
+/* Distinct service environments */
+.cleaning-theme{--area-accent:#c9ff52;--area-dark:#123f2f}
+.renovation-theme{--area-accent:#e7794f;--area-dark:#593526;--paper:#f4f0ea}
+.cleaning-theme .brand-box,.cleaning-theme .nav-cta,.cleaning-theme .btn.lime{background:var(--area-accent);color:#111714}
+.renovation-theme .brand-box,.renovation-theme .nav-cta,.renovation-theme .btn.lime{background:var(--area-accent);color:#fff}
+.renovation-theme .section.soft{background:#eee6dc}
+.renovation-theme .kicker:not(.light){color:#8a5c47}
+.renovation-theme .service-card:hover{border-color:#d9ad97}
+.cleaning-theme .service-card:hover{border-color:#b7d992}
+.renovation-theme .big-banner{background:#e7794f}
+.cleaning-theme .big-banner{background:#c9ff52}
+.renovation-theme .inner-hero:before{background:linear-gradient(90deg,rgba(28,17,12,.9) 0%,rgba(28,17,12,.64) 46%,rgba(28,17,12,.16) 82%),linear-gradient(180deg,rgba(0,0,0,.06),rgba(0,0,0,.46))}
+.cleaning-theme .inner-hero:before{background:linear-gradient(90deg,rgba(5,19,14,.9) 0%,rgba(5,19,14,.6) 44%,rgba(5,19,14,.12) 80%),linear-gradient(180deg,rgba(0,0,0,.06),rgba(0,0,0,.42))}
+.renovation-theme .audience-card{background:#251b16}
+.cleaning-theme .audience-card{background:#15231c}
+
+@media(max-width:760px){
+  .landing-brand{left:20px;right:20px;top:18px}
+  .landing-label{display:none}
+  .landing-copy{left:22px;right:22px;bottom:28px}
+  .landing-copy h1{font-size:52px}
+  .area-modal{padding:10px}
+  .area-modal-panel{max-height:calc(100svh - 20px);padding:18px;border-radius:20px}
+  .area-modal-head{grid-template-columns:1fr;gap:12px;padding:4px 2px 18px}
+  .area-modal-head h1{font-size:32px}
+  .area-choice-grid{grid-template-columns:1fr}
+  .area-choice-media{height:155px}
+  .area-choice-body{padding:18px}
+  .area-choice h2{font-size:25px}
+  .area-choice p{margin-bottom:14px}
+  .area-modal-foot{display:none}
+}
