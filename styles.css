@@ -567,3 +567,32 @@ details p{margin:0;padding:0 0 22px;max-width:760px;color:var(--muted);line-heig
     --motion-rotate:0deg;
   }
 }
+
+
+/* Hero image stacking fix */
+.inner-hero{
+  isolation:isolate;
+  background:#111;
+}
+.inner-hero>img{
+  z-index:0!important;
+  opacity:1;
+}
+.inner-hero:before{
+  z-index:1!important;
+  pointer-events:none;
+}
+.inner-hero .hero-copy{
+  position:relative;
+  z-index:2;
+}
+.cleaning-theme .inner-hero:before{
+  background:
+    linear-gradient(90deg,rgba(6,18,13,.88) 0%,rgba(6,18,13,.68) 42%,rgba(6,18,13,.22) 72%,rgba(6,18,13,.08) 100%),
+    linear-gradient(180deg,rgba(0,0,0,.06) 0%,rgba(0,0,0,.30) 100%);
+}
+.renovation-theme .inner-hero:before{
+  background:
+    linear-gradient(90deg,rgba(26,17,13,.88) 0%,rgba(26,17,13,.67) 43%,rgba(26,17,13,.24) 72%,rgba(26,17,13,.08) 100%),
+    linear-gradient(180deg,rgba(0,0,0,.05) 0%,rgba(0,0,0,.30) 100%);
+}
