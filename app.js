@@ -1,22 +1,43 @@
-document.querySelectorAll("[data-year]").forEach(el=>el.textContent=new Date().getFullYear());
 
-const toggle=document.querySelector(".menu-toggle");
-const nav=document.querySelector(".site-nav");
-if(toggle&&nav){
-  toggle.addEventListener("click",()=>{const open=nav.classList.toggle("is-open");toggle.setAttribute("aria-expanded",open)});
-  nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("is-open");toggle.setAttribute("aria-expanded","false")}));
-}
+document.querySelectorAll("[data-year]").forEach(function(el){el.textContent=new Date().getFullYear();});
 
-const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");observer.unobserve(entry.target)}}),{threshold:.12});
-document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
-
-const form=document.querySelector("[data-demo-form]");
-const toast=document.querySelector(".toast");
-if(form){
-  form.addEventListener("submit",e=>{
-    e.preventDefault();
-    if(!form.reportValidity()) return;
-    if(toast){toast.classList.add("show");setTimeout(()=>toast.classList.remove("show"),4500)}
-    form.reset();
+var menuButton=document.querySelector(".menu-button");
+if(menuButton){
+  menuButton.addEventListener("click",function(){
+    var opened=document.body.classList.toggle("nav-open");
+    menuButton.setAttribute("aria-expanded",opened?"true":"false");
+  });
+  document.querySelectorAll(".nav-links a").forEach(function(link){
+    link.addEventListener("click",function(){
+      document.body.classList.remove("nav-open");
+      menuButton.setAttribute("aria-expanded","false");
+    });
   });
 }
+
+if("IntersectionObserver" in window){
+  var observer=new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },{threshold:.1});
+  document.querySelectorAll(".reveal").forEach(function(el){observer.observe(el);});
+}else{
+  document.querySelectorAll(".reveal").forEach(function(el){el.classList.add("visible");});
+}
+
+document.querySelectorAll("[data-demo-form]").forEach(function(form){
+  form.addEventListener("submit",function(e){
+    e.preventDefault();
+    if(!form.reportValidity()) return;
+    var toast=document.querySelector(".toast");
+    if(toast){
+      toast.classList.add("show");
+      setTimeout(function(){toast.classList.remove("show");},4200);
+    }
+    form.reset();
+  });
+});
