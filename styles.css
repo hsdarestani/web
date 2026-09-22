@@ -298,7 +298,7 @@ details p{margin:0;padding:0 0 22px;max-width:760px;color:var(--muted);line-heig
 .landing-shell{position:fixed;inset:0;overflow:hidden;color:#fff}
 .landing-backdrop{position:absolute;inset:0;background:
   linear-gradient(90deg,rgba(8,15,11,.92),rgba(8,15,11,.54)),
-  url("assets/renovation-finished.svg") center/cover no-repeat;transform:scale(1.03)}
+  url("https://images.pexels.com/photos/15062161/pexels-photo-15062161.jpeg?auto=compress&cs=tinysrgb&w=1800") center/cover no-repeat;transform:scale(1.03)}
 .landing-backdrop:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 18% 20%,rgba(201,255,82,.18),transparent 28%),linear-gradient(180deg,transparent 45%,rgba(5,9,7,.68))}
 .landing-brand{position:absolute;z-index:2;left:38px;right:38px;top:30px;display:flex;align-items:center;justify-content:space-between}
 .landing-label{font-size:12px;color:rgba(255,255,255,.56);text-transform:uppercase;letter-spacing:.14em}
