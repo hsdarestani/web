@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Kai Dienstleistungen</title>
+  <desc id="desc">Kai Dienstleistungen logo with house, blue window, flowing waves and wordmark.</desc>
+  <defs>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12b8ff"/>
+      <stop offset=".55" stop-color="#008df2"/>
+      <stop offset="1" stop-color="#005fd0"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f4f6f8"/>
+      <stop offset=".48" stop-color="#9aa7b6"/>
+      <stop offset="1" stop-color="#e6ebef"/>
+    </linearGradient>
+    <radialGradient id="spark" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+      <stop offset=".28" stop-color="#dff5ff" stop-opacity=".95"/>
+      <stop offset=".62" stop-color="#149fff" stop-opacity=".65"/>
+      <stop offset="1" stop-color="#149fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <g fill="none" stroke="#fff" stroke-width="18" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M52 182 L212 37 L370 182"/>
+    <path d="M99 174 V287"/>
+    <path d="M323 174 V287"/>
+    <path d="M96 106 V66"/>
+  </g>
+
+  <g fill="url(#blue)">
+    <rect x="157" y="139" width="48" height="48" rx="2"/>
+    <rect x="217" y="139" width="48" height="48" rx="2"/>
+    <rect x="157" y="199" width="48" height="48" rx="2"/>
+    <rect x="217" y="199" width="48" height="48" rx="2"/>
+  </g>
+
+  <path d="M29 279 C120 214 196 234 272 265 C316 283 348 292 397 283 C349 326 286 319 229 296 C161 270 95 260 29 299 Z" fill="url(#blue)"/>
+  <path d="M34 309 C118 264 187 279 252 304 C303 324 348 329 401 310 C353 348 291 349 227 329 C156 307 95 294 34 324 Z" fill="url(#silver)" opacity=".95"/>
+
+  <g filter="url(#glow)">
+    <circle cx="337" cy="175" r="38" fill="url(#spark)"/>
+    <path d="M337 115 V235 M277 175 H397" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+    <path d="M310 148 L364 202 M364 148 L310 202" stroke="#dff5ff" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <text x="438" y="236" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="178" font-weight="800" letter-spacing="6">KAI</text>
+  <line x1="405" y1="294" x2="449" y2="294" stroke="url(#blue)" stroke-width="8"/>
+  <text x="468" y="310" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" letter-spacing="2.8">DIENSTLEISTUNGEN</text>
+  <line x1="1110" y1="294" x2="1170" y2="294" stroke="url(#blue)" stroke-width="8"/>
+</svg>
