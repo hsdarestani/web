@@ -771,3 +771,25 @@ body{background:var(--paper);color:#10151c}
   .landing-brand .brand-logo img{height:46px}
   .footer .brand-logo img{height:50px}
 }
+
+
+/* Prevent visible word hyphenation */
+html[lang="de"] body,
+html[lang="de"] h1,
+html[lang="de"] h2,
+html[lang="de"] h3,
+html[lang="de"] h4,
+html[lang="de"] p,
+html[lang="de"] a,
+html[lang="de"] span,
+html[lang="de"] strong,
+html[lang="de"] label,
+html[lang="de"] summary,
+html[lang="de"] button,
+html[lang="de"] input,
+html[lang="de"] textarea{
+  -webkit-hyphens:none;
+  hyphens:none;
+  word-break:normal;
+  overflow-wrap:normal;
+}
