@@ -1,0 +1,39 @@
+name: Deploy to STRATO
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      STRATO_SFTP_HOST: ${{ secrets.STRATO_SFTP_HOST }}
+      STRATO_SFTP_USER: ${{ secrets.STRATO_SFTP_USER }}
+      STRATO_SFTP_PASSWORD: ${{ secrets.STRATO_SFTP_PASSWORD }}
+      STRATO_SFTP_PATH: ${{ secrets.STRATO_SFTP_PATH }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate STRATO secrets
+        shell: bash
+        run: |
+          test -n "$STRATO_SFTP_HOST" || (echo "Missing STRATO_SFTP_HOST" && exit 1)
+          test -n "$STRATO_SFTP_USER" || (echo "Missing STRATO_SFTP_USER" && exit 1)
+          test -n "$STRATO_SFTP_PASSWORD" || (echo "Missing STRATO_SFTP_PASSWORD" && exit 1)
+          test -n "$STRATO_SFTP_PATH" || (echo "Missing STRATO_SFTP_PATH" && exit 1)
+
+      - name: Install deployment tools
+        run: sudo apt-get update && sudo apt-get install -y sshpass rsync
+
+      - name: Trust STRATO host
+        shell: bash
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -p 22 "$STRATO_SFTP_HOST" >> ~/.ssh/known_hosts
+
+      - name: Deploy static site
+        shell: bash
+        run: |
+          sshpass -p "$STRATO_SFTP_PASSWORD" rsync -avz --delete             --exclude=".git/"             --exclude=".github/"             --exclude="README.md"             -e "ssh -p 22 -o StrictHostKeyChecking=yes"             ./ "$STRATO_SFTP_USER@$STRATO_SFTP_HOST:$STRATO_SFTP_PATH/"
